@@ -1,0 +1,7 @@
+---
+- hosts: win
+  tasks:
+  - name: uninstall Notepadplusplus
+    win_chocolatey:
+      name: notepadplusplus.install
+      state: absent
